@@ -30,3 +30,4 @@ fruitvice_normalize = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruitvice_normalize)
 
 
+
