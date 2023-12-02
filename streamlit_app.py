@@ -29,3 +29,4 @@ fruityvice_response = requests.get("http://fruityvice.com/api/fruit/" + fruit_ch
 fruitvice_normalize = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruitvice_normalize)
 
+
