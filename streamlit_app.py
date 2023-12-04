@@ -37,7 +37,7 @@ streamlit.text( "Hello from Snowflake:")
 streamlit.text( "The fruit load list contains:")
 streamlit.text(my_data_row)
 
-fruits_selected=streamlit.multiselect("What fruit would you like to add:", list(my_data_row.index), ['Avocado', 'Strawberries'])
-# streamlit.dataframe(my_fruit_list)
-fruits_to_show = my_fruit_list.loc[fruits_selected]
-streamlit.dataframe(fruits_to_show)
+fruit_choice = streamlit.text_input('What fruit would you like to add?','Kiwi')
+fruityvice_response = my_data_row + fruit_choice
+fruitvice_normalize = pandas.json_normalize(fruityvice_response.json())
+streamlit.dataframe(fruitvice_normalize)
