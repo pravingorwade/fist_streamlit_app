@@ -29,6 +29,7 @@ fruityvice_response = requests.get("http://fruityvice.com/api/fruit/" + fruit_ch
 #streamlit.text(fruityvice_response.json())
 fruitvice_normalize = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruitvice_normalize)
+streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
 
 
