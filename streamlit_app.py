@@ -37,7 +37,5 @@ streamlit.text( "Hello from Snowflake:")
 streamlit.text( "The fruit load list contains:")
 streamlit.text(my_data_row)
 
-fruit_choice = streamlit.text_input('What fruit would you like to add?','Kiwi')
-fruityvice_response = my_data_row + fruit_choice
-fruitvice_normalize = pandas.json_normalize(fruityvice_response.json())
-streamlit.dataframe(fruitvice_normalize)
+add_my_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
+streamlit.write(add_my_fruit)
